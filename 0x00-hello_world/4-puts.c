@@ -3,7 +3,7 @@
 /**
  * main - Displays a string using puts
  *
- * return: return 0 when executed successfully
+ * Return: returns 0 when executed successfully
  */
 int main(void)
 {
