@@ -1,15 +1,15 @@
 #include<stdio.h>
 
 /**
- * main - Entry point 
+ * main - Entry point
  *
  * Return: returns 0 when executed successfully
  */
 int main(void)
 {
 	char c;
-	for (c='z';c>='a';c--)
+	for (c = 'z'; c >= 'a'; c--)
 		putchar(c);
-	putchar('\n');	
+	putchar('\n');
 	return (0);
 }
