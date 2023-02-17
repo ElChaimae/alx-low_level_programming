@@ -1,22 +1,23 @@
 #include<stdio.h>
 
 /**
- * main - Entry point 
+ * main - Entry point
  *
  * Return: returns 0 when executed successfully
  */
 int main(void)
 {
 	int i;
-	for (i=0;i<10;i++)
+	
+	for (i = 0; i < 10; i++)
 	{
-		putchar('0'+i);
-		if(i!=9)
+		putchar('0' + i);
+		if (i != 9)
 		{
 			putchar(',');
 			putchar(' ');
 		}
 	}
-	putchar('\n');	
+	putchar('\n');
 	return (0);
 }
