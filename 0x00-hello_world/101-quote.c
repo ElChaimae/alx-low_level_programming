@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <unistd.h>
 
-/*
- * main - prints a string
+/**
+ * main- prints a string
  *
  * Description: Entry point
  * Return: returns 1 to indicate success
