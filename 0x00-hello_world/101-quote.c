@@ -4,10 +4,9 @@
 /*
  * main - prints a string
  *
- * Description - Entry point
+ * Description: Entry point
  * Return: returns 1 to indicate success
  */
-
 int main(void)
 {
 	char str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
