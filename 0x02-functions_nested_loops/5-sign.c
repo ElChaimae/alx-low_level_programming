@@ -5,11 +5,16 @@
   * @c: character to be checked
   *
   * Return: 1 if c is positive
-  * -1 if c is negative 
+  * -1 if c is negative
   * 0 otherwise
   */
 int print_sign(int c)
 {
+	if (c == '0')
+        {
+                _putchar('0');
+                return (0);
+        }
 	if (c > '0')
 	{
 		_putchar('+');
@@ -19,10 +24,5 @@ int print_sign(int c)
 	{
 		_putchar('-');
 		return (-1);
-	}
-	else
-	{
-		_putchar('0');
-		return (0);
 	}
 }
