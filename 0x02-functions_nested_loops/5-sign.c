@@ -10,10 +10,10 @@
   */
 int print_sign(int c)
 {
-	if (c == '0')
+	if (c == 48)
         {
-                _putchar('0');
-                return (0);
+		_putchar('0');
+		return (0);
         }
 	else if (c > '0')
 	{
