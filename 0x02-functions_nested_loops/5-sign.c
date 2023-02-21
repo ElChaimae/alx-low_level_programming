@@ -7,7 +7,7 @@
   * Return: 1 if c is positive
   * -1 if c is negative 
   * 0 otherwise
-  *
+  */
 int print_sign(int c)
 {
 	if (c > '0')
