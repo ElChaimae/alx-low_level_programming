@@ -1,18 +1,6 @@
 #include "main.h"
 
 /**
-   * main - This function prints the alphabet, in lowercase, followed by a new line. 
-   *
-   * Return: This function returns 0 on success
-   */
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
-
-/**
    * print_alphabet - This function prints the alphabet, in lowercase, followed by a new line.
    *
    * Return: void
