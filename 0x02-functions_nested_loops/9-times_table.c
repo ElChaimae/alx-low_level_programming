@@ -18,6 +18,7 @@ void times_table(void)
 				printf("%d,  ", i * j);
 			else
 				printf("%d, ", i * j);
+		}
 		printf("%d\n", i * j);
 	}
 }
