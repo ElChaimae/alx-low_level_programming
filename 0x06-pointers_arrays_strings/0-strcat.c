@@ -11,29 +11,20 @@
 char *_strcat(char *dest, char *src)
 {
 int i, j;
-int l = _strlen(dest);
-for (i = l, j = 0; i < l + _strlen(src), j < _strlen(src); i++, j++)
+int l = 0;
+int m = 0;
+
+while (dest[l] != '\0')
+	l++;
+
+while (src[m] != '\0')
+	m++;
+
+for (i = l, j = 0; i < l + m, j < m; i++, j++)
 {
-dest[i] = src[j];
+	dest[i] = src[j];
 }
 dest[i] = '\0';
+
 return (dest);
-}
-
-/**
- * _strlen - calculates the size of a string
- * @s: pointer to a string
- *
- * Description: takes string and returns its length
- * Return: the size of the string
- */
-int _strlen(char *s)
-{
-	int i = 0;
-
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
 }
