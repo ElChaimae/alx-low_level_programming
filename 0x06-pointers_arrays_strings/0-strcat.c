@@ -20,7 +20,7 @@ while (dest[l] != '\0')
 while (src[m] != '\0')
 	m++;
 
-for (i = l, j = 0; i < l + m, j < m; i++, j++)
+for (i = l, j = 0; i < l + m && j < m; i++, j++)
 {
 	dest[i] = src[j];
 }
@@ -28,3 +28,4 @@ dest[i] = '\0';
 
 return (dest);
 }
+
