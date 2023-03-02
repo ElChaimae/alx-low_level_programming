@@ -20,7 +20,10 @@ while (s[i] != '\n')
 	for (j = 0; j < 10; j++)
 	{
 		if (a[j][0] == s[i])
-		s[i] = a[j][1];
+		{
+			s[i] = a[j][1];
+			break;
+		}
 	}
 	i++;
 }
