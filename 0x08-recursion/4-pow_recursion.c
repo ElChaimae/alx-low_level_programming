@@ -6,7 +6,7 @@
  * @x: int
  * @y: int
  *
- * Return : power or -1 if error
+ * Return : resulting power or -1 for error
  */
 
 int _pow_recursion(int x, int y)
