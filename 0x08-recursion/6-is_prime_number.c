@@ -20,7 +20,8 @@ int is_prime_number(int n)
 /**
  * help - helper function, recursive steps taken
  * @n: number given to original function is_prime_number
- * @divider: incrementer divisor
+ * @m: divisor
+ *
  * Return: 0 if not prime, 1 if prime
  */
 int help(int n, int m)
