@@ -1,6 +1,12 @@
 #include "main.h"
 int help(int n, int m);
 
+/**
+ * is_prime_number - determine if a number is a prime number
+ * @n: int number
+ *
+ * Return: 1 if prime, 0 otherwise
+ */
 int is_prime_number(int n)
 {
 	if (n <= 0)
@@ -11,6 +17,12 @@ int is_prime_number(int n)
 		return (help(n, 2));
 }
 
+/**
+ * help - helper function, recursive steps taken
+ * @n: number given to original function is_prime_number
+ * @divider: incrementer divisor
+ * Return: 0 if not prime, 1 if prime
+ */
 int help(int n, int m)
 {
 	if (n == m)
