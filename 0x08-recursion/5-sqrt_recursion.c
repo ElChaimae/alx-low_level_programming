@@ -19,6 +19,13 @@ int _sqrt_recursion(int n)
 		return (sqrt_recursion(n, 1));
 }
 
+/**
+ * sqrt_recursion - helping function
+ * @n: given number
+ * @root: possible root to be checked
+ *
+ * Return: square root or -1 for error
+ */
 int sqrt_recursion(int n, int root)
 {
 	if (n == root * root)
