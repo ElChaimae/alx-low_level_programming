@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- * create_array: creates an array of chars,
+ * create_array - creates an array of chars,
  * and initializes it with a specific char.
  * @size: array size
  * @c: char to be assigned
@@ -16,9 +17,13 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 		return (NULL);
-	str = malloc(size);
-	while (--size)
+	str = (char *)malloc(sizeof(char) * size);
+
+	while ((int) size >= 0)
+	{
 		str[size] = c;
+		size--;
+	}
 
 	return (str);
 }
