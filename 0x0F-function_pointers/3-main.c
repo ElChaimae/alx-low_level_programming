@@ -4,15 +4,14 @@
  * main - performs simple operations
  * @argc: argument count
  * @argv: argument vector
- * Return: 0 on success, 98 on failure
  */
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int (*f)(int a, int b);
 	int res;
 	char op = *(argv[2]);
 
-	argc;
+	(void)argc;
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -30,4 +29,5 @@ void main(int argc, char *argv[])
 	res = f(atoi(argv[1]), atoi(argv[3]));
 	printf("%d\n", res);
 
+	return(0);
 }
