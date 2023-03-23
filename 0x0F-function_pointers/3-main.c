@@ -8,8 +8,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int (*f)(int a, int b);
-	int res;
+	int arg1, arg2, result;
+	int (*func)(int, int);
 
 	if (argc != 4)
 	{
@@ -17,16 +17,20 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	f = get_op_func(argv[2]);
+	arg1 = atoi(argv[1]);
+	arg2 = atoi(argv[3]);
 
-	if (f == NULL)
+	func = get_op_func(argv[2]);
+
+	if (!func)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	res = f(atoi(argv[1]), atoi(argv[3]));
-	printf("%d\n", res);
+	result = func(arg1, arg2);
 
-	return (0);
+	printf("%d\n", result);
+
+	return (0);	
 }
