@@ -1,3 +1,6 @@
+section .data
+    hello db 'Hello, Holberton',10 ; Define the string to be printed
+
 section .text
     global _start
 
@@ -15,3 +18,4 @@ _start:
     mov rax, 60         ; Set the system call number for exit to 60
     xor rdi, rdi        ; Set the exit status code to 0
     syscall
+
