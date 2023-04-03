@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdlib.h>
 /**
  * get_nodeint_at_index - Returns the nth node of a listint_t linked list.
  * @head: A pointer to the head node of the linked list.
@@ -10,7 +10,9 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-    /* TODO: Fill in the function body */
-    return (NULL);
+	if (index == 0 || head == NULL)
+		return (head);
+	else
+		return (get_nodeint_at_index(head->next, --index));
 }
 
