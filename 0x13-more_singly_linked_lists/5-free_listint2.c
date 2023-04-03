@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdlib.h>
 /**
  * free_listint2 - Frees a listint_t list.
  * @head: Double pointer to the head node of the list.
@@ -8,6 +8,11 @@
  */
 void free_listint2(listint_t **head)
 {
-    /* Empty function implementation */
+	if (*head)
+	{
+		free_listint2(&((*head)->next));
+		free(*head);
+	}
+	*head = NULL;
 }
 
