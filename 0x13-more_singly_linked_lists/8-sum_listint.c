@@ -10,6 +10,8 @@
  */
 int sum_listint(listint_t *head)
 {
-    /* TODO: Implement function */
+	if (!head)
+		return (0);
+	return (head->n + sum_listint(head->next));
 }
 
