@@ -8,6 +8,14 @@
  */
 size_t listint_len(const listint_t *h)
 {
-    /* Empty function implementation */
+	size_t len = 0;
+
+	while (h)
+	{
+		h = h->next;
+		len++;
+	}
+
+	return (len);
 }
 
