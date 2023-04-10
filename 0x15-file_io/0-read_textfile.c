@@ -14,8 +14,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fildes;
 	char *buffer;
-	int r_count;
-	int w_count;
+	ssize_t r_count;
+	ssize_t  w_count;
 
 	if (!filename)
 		return (0);
