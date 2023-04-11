@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * main - Copies the content of a file to another file.
