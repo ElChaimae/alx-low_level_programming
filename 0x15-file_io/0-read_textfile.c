@@ -24,7 +24,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	fildes = open(filename, 0);
 	r_count = read(fildes, buffer, letters);
-	w_count = write(1, buffer, r_count);
+	w_count = write(STDOUT_FILENO, buffer, r_count);
 	if (fildes == -1 || r_count == -1 || w_count == -1 || w_count != r_count)
 	{
 		close(fildes);
