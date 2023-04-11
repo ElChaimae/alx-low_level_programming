@@ -20,8 +20,6 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	if (strcmp(argv[1], argv[2]) == 0)
-		dprintf(STDERR_FILENO, "Error: identical src and des\n"), exit(100);
 	fd_from = open(argv[1], O_RDONLY);
 	if (fd_from < 0)
 	{
