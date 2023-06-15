@@ -10,12 +10,12 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 	size_t n = 0;
-	dlistint_t *node = h;
+	const dlistint_t *node = h;
 
 	while (node != NULL)
 	{
 		n++;
-		node = node.next;
+		node = node->next;
 	}
 	return (n);
 }
